@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+.widget {
+	margin: 0 0 $base__space-unit;
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+	padding: 50px;
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+	display: none;
+}
+
+.widget-area aside {
+	span {
+		color: black;
+	}
+	p {
+		color: rgb(69, 136, 130);
+	}
+	p:nth-child(4) {
+		color: black;
+	}
+}
+
+.day-of-week {
+	font-weight: bold;
+}
+
+.day-of-week::after { 
+    color: black;
+}
+
+.tent-biz-hours-class aside {
+	p {
+		color: black;
+	}
+}

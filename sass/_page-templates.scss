@@ -1,0 +1,313 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+  
+
+/* Front page */
+
+
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+.page_item a {
+    color: white;
+}
+    .alt-header-banner {
+        color: rgb(69, 136, 130); 
+    }
+
+    .header-banner {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        z-index: -10000;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/home-hero.jpg');
+        background-size: cover;
+        img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+
+    .tent {
+        width: 50px;
+
+    }
+
+    .main-navigation {
+        padding: 10px;
+        color: white;
+        display: grid;
+        grid-template-columns: 55% 30% 10% 5%; 
+    }
+
+    ul.menu {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .search-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    fieldset {
+        border: none;
+        i {
+        color: white;
+        }
+    }
+
+    .site-journal{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+
+
+    .menu-item a {
+        color: white;
+    }
+
+
+   
+    .page-template-Shop {
+        .site-main {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        }
+    }
+   
+    .journal-posts {
+        display: grid;
+        padding: 5px;
+        margin: 10px;
+        img {
+            height: 200px;
+        }
+        h1 {
+            order: 2;
+            color: rgb(69, 136, 130);
+            text-transform: uppercase;
+            font-size: 17px;
+        }
+        button {
+            text-transform: uppercase;
+            width: 100px;
+            padding: 10px;
+            position: absolute;
+            margin-bottom: 5px;
+            border: 2px solid rgb(69, 136, 130);
+            background-color: white;
+            color: rgb(69, 136, 130)
+        }
+        button:hover {
+            background-color: rgb(69, 136, 130);
+            color: white;
+        }
+        .journal-posts-border {
+            height: 125px;
+            margin: 0;
+            border: 1px solid rgb(225, 225, 225);
+            border-top: 5px solid rgb(225, 225, 225);
+        }
+    }
+
+
+//shop
+    .shop-stuff {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .stuff {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        img {
+            width: 75px;
+        }
+        border: 1px solid rgb(225, 225, 225);
+        border-top: 5px solid rgb(225, 225, 225);
+    }
+    .stuff:hover {
+        border: 1px solid rgb(207,146,94);
+        border-top: 5px solid rgb(207,146,94);
+    }
+    
+    .shop {
+        font-size: 14px;
+        color: white;
+        box-shadow: none;
+        padding: 15px 25px;
+        border-radius: 0;
+        background-color: rgb(69, 136, 130);
+    }
+    .page-template-Shop{
+        .main-navigation {
+            border-bottom: 1px solid #e1e1e1;
+        }
+        nav {
+            .menu-item a {
+                color: rgb(69, 136, 130);
+            }
+            fieldset {
+                i {
+                color: rgb(69, 136, 130);
+                }
+            }
+        }
+    }
+
+
+    .site-footer {
+        background: url(../../images/dark-wood.png);
+        color: white;
+    }
+
+	.widget-footer {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    // background: url(../../images/dark-wood.png);
+    // color: white;
+        li {
+            list-style: none;
+        }
+        h2 {
+            color: rgb(207,146,94);
+        }
+        img {
+            display: flex;
+            justify-self: center;
+            padding: 50px;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    
+    .contact-us-biz-class {
+        padding: 50px;
+    }
+
+    .tent-biz-hours-class {
+        padding: 50px;
+    }
+
+//Journal
+  
+.journal-grid {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.page-template-journal {
+    .main-navigation {
+        border-bottom: 1px solid #e1e1e1;
+    }
+    nav {
+            .menu-item a {
+                color: rgb(69, 136, 130);
+            }
+            fieldset {
+                i {
+                color: rgb(69, 136, 130);
+                }
+            }
+        }
+    .site-journal {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    }
+
+//About-Us
+.page-template-about-us{
+    .header-banner {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/product-photos/gas-stove.jpg');
+        background-size: cover;
+        position: relative;
+        z-index: -10000;
+    h1 {
+        color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    }
+}
+
+
+//Find Us
+.page-template-find-us {
+    nav {
+            .menu-item a {
+                color: rgb(69, 136, 130);
+            }
+            fieldset {
+                i {
+                color: rgb(69, 136, 130);
+                }
+            }
+        }
+    }
+
+aside {
+    padding: 150px;
+}
+
+.hfeed-site {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+    //widget
+
+    fieldset {
+        display: flex;
+    }
+
+    //search
+
+    
+    .search-results {
+        h1{
+            font-size: 2em;
+        }
+        .main-navigation {
+        border-bottom: 1px solid #e1e1e1;
+    }
+        nav {
+                .menu-item a {
+                    color: rgb(69, 136, 130);
+                }
+                fieldset {
+                    i {
+                    color: rgb(69, 136, 130);
+                    }
+                }
+            }
+        }
+    
+    aside {
+        padding: 150px;
+    }
