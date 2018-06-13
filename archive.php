@@ -6,38 +6,36 @@
  */
 
 get_header(); ?>
+<div class="journal-header">
+</div>
+	
+<h1>Inhabitent Journal</h1>
+<div class="journal-grid">
+<div id"journal-main" class="journal-content-area">
+        <main id="main" class="site-journal" role="main">
+        <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 5)?>
+        <?php $posts = new WP_Query( $args ); /* $args set above*/ ?>
+        <?php if ( $posts->have_posts() ) : ?>
+        <?php while ( $posts->have_posts() ) : $posts->the_post(); ?>
+        <div class="journal-posts">
+        <?php the_post_thumbnail(); ?>   
+        <div class="journal-posts-border">
+        <h1><?php the_title(); ?></h1>
+        <button href="">Read More</button>
+            </div>
+        </div>
+        <?php endwhile; ?>
+        <?php the_posts_navigation(); ?>
+        <?php wp_reset_postdata(); ?>
+<?php else : ?>
+      <h2>Nothing found!</h2>
+<?php endif; ?>
+</main>
+    </div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+<div class="sidebar">
 <?php get_sidebar(); ?>
+</div>
+</div>
+
 <?php get_footer(); ?>
